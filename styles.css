@@ -1,0 +1,70 @@
+/* External CSS Stylesheet for Ebook */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: "Calibri", "Comic Sans MS", 'Roboto', cursive, sans-serif;
+    background-color: #fdf6e3;
+    color: #333333;
+    margin: 0;
+    padding: 0 1em;
+}
+
+header, footer, nav {
+    background-color: #eee8d5;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Navigation flex container */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+nav a {
+    color: #657b83;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #586e75;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 40em;
+    margin: 1em auto;
+    line-height: 1.4em;
+    text-align: left;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #657b83;
+}
+
+/* Clear floats after image */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
